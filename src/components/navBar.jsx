@@ -10,7 +10,7 @@ import {
     MenuDivider,
     IconButton, 
   } from '@chakra-ui/react';
-  import HamburgerIcon from '@chakra-ui/icons';
+  import {HamburgerIcon, AddIcon, ExternalLinkIcon, RepeatIcon, EditIcon} from "@chakra-ui/icons";
 
 
 const NavBar = () => {
@@ -23,17 +23,17 @@ const NavBar = () => {
     variant='outline'
   />
   <MenuList>
-    <MenuItem icon={<AddIcon />} command='⌘T'>
-      New Tab
+    <MenuItem>
+      Productos
     </MenuItem>
-    <MenuItem icon={<ExternalLinkIcon />} command='⌘N'>
-      New Window
+    <MenuItem>
+      Nosotros
     </MenuItem>
-    <MenuItem icon={<RepeatIcon />} command='⌘⇧N'>
-      Open Closed Tab
+    <MenuItem>
+      Contacto
     </MenuItem>
-    <MenuItem icon={<EditIcon />} command='⌘O'>
-      Open File...
+    <MenuItem >
+      FAQ's
     </MenuItem>
   </MenuList>
 </Menu>
