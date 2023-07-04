@@ -7,11 +7,6 @@ import ProductDetails from './components/ProductsDetails';
 
 
 function App() {
-<<<<<<< HEAD
-=======
-  
-
->>>>>>> 6603f030e4b0e02bfed52e50258a1acfaa29455b
   return (
     <BrowserRouter>
       <Routes>
@@ -20,7 +15,7 @@ function App() {
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
->>>>>>> gabriel
+
   )
 }
 
