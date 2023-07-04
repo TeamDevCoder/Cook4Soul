@@ -7,20 +7,17 @@ import ProductDetails from './components/ProductsDetails';
 
 
 function App() {
-<<<<<<< HEAD
-=======
   
 
->>>>>>> 6603f030e4b0e02bfed52e50258a1acfaa29455b
   return (
     <BrowserRouter>
       <Routes>
+        
         <Route exact path='/products' element={<Products/>}/>
         <Route exact path='/products/:id' element={<ProductDetails/>}/>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
->>>>>>> gabriel
   )
 }
 
