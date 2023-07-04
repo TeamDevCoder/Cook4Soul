@@ -16,7 +16,8 @@ import {
 
 const NavBar = () => {
   return (
-    <Menu className="Menu">
+    <div className='Menu'>
+    <Menu>
   <MenuButton
     as={IconButton}
     aria-label='Options'
@@ -24,10 +25,6 @@ const NavBar = () => {
     variant='outline'
   />
 
-    <MenuItem>
-        <img src="./LogoNavBar.svg" alt="logoNavbar" />
-    </MenuItem>
-  
   <MenuList>
     <MenuItem>
       Productos
@@ -43,6 +40,10 @@ const NavBar = () => {
     </MenuItem>
   </MenuList>
 </Menu>
+<div className='Menu__Logo'>
+    <img className='imgMenu__Logo' src="./LogoNavBar.svg" alt="logoNavbar" />
+</div>
+</div>
 
   )
 }

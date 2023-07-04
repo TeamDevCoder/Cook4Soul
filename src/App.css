@@ -1,3 +1,116 @@
 .Menu{
-  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 50px;
+  margin: 5px;
+}
+
+.Menu__Logo{
+
+    height: 50px;
+    margin-left: 25%;
+
+}
+
+.imgMenu__Logo{
+
+  width: 100px ;
+  padding-bottom: 15px;
+}
+
+/*Home*/
+.Home{
+display: flex;
+flex-direction:column;
+justify-content: center;
+flex: 1 0 0; 
+}
+
+.home__h1{
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  margin-top: 25px;
+
+}
+
+.home__h4{
+  color: #000;
+text-align: center;
+font-size: 18px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+}
+
+.home__bottonProds{
+
+color: var(--texto, #151515);
+text-align: center;
+font-size: 18px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+margin-left: 30px;
+margin-right: 30px;
+margin-top: 30px;
+}
+
+.home__text{
+
+  color: #000;
+font-size: 15px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+text-align: center;
+margin: 30px;
+}
+
+.slider{
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slider-track{
+
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px *8);
+
+}
+
+.slider .slide {
+
+  width: 200px;
+
+}
+
+.slider .slide img{
+
+  width: 100%;
+
+}
+
+@keyframes scroll {
+  0%{
+     -webkit-transform: translateX(0);
+     transform: translateX(0);
+
+  }
+  100% {
+    -webkit-transform: translateX(calc(-200px *8));
+     transform: translateX(calc(-200px *8));
+  }
 }
