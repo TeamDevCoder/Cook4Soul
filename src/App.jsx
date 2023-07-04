@@ -1,15 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Products from './components/Products';
+import ProductDetails from './components/ProductsDetails';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
+<<<<<<< HEAD
     <>
       <h1>Aver ga</h1>
     </>
+=======
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/products' element={<Products/>}/>
+        <Route exact path='/products/:id' element={<ProductDetails/>}/>
+      </Routes>
+      <Footer></Footer>
+    </BrowserRouter>
+>>>>>>> gabriel
   )
 }
 
