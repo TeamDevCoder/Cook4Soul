@@ -8,11 +8,6 @@ import ProductDetails from './components/ProductsDetails';
 
 function App() {
   return (
-<<<<<<< HEAD
-    <>
-      <h1>Aver ga</h1>
-    </>
-=======
     <BrowserRouter>
       <Routes>
         <Route exact path='/products' element={<Products/>}/>
