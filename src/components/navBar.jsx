@@ -1,17 +1,12 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 import {
     Menu,
     MenuButton,
     MenuList,
-    MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuDivider,
-    IconButton, 
+    IconButton,
   } from '@chakra-ui/react';
-  import {HamburgerIcon, AddIcon, ExternalLinkIcon, RepeatIcon, EditIcon} from "@chakra-ui/icons";
+  import {HamburgerIcon} from "@chakra-ui/icons";
   
 
 const NavBar = () => {
@@ -27,25 +22,32 @@ const NavBar = () => {
 
   <MenuList>
     <div className='MenuListContainer'>
-    <button type="button" class="btn btn-light Menu__bottons">Productos</button>
-    <button type="button" class="btn btn-light Menu__bottons">Nosotros</button>
-    <button type="button" class="btn btn-light Menu__bottons">Contacto</button>
-    <button type="button" class="btn btn-light Menu__bottons">FAQ'S</button>
-    {/* <div className='btn btn-secondary Menu__bottonContact'>
-    <img className='logoContact' src="whatsapp.svg" alt="WhatsApp Logo" />
-    <p className='bottonContact__text'>Contáctanos</p>
-    </div> */}
-    <button className='btn btn-secondary Menu__bottonContact'><img className='logoContact' src="whatsapp.svg" alt="WhatsApp Logo"></img>Contactanos</button>
     
+    <Link to="/Products"><button type="button" class="btn btn-light Menu__bottons">Productos</button></Link>
+    
+    <Link to="/Nosotros">
+    <button type="button" class="btn btn-light Menu__bottons">Nosotros</button>
+    </Link>
+    <Link to="/Contacto">
+    <button type="button" class="btn btn-light Menu__bottons">Contacto</button>
+    </Link>
+    <Link to="/Faq's">
+    <button type="button" class="btn btn-light Menu__bottons">FAQ'S</button>
+    </Link>
+    <Link to="/#">
+    <button className='btn btn-secondary Menu__bottonContact'><img className='logoContact' src="whatsapp.svg" alt="WhatsApp Logo"></img>Contactanos</button>
+    </Link>
     <div className='SideBarLogo'>
-        <img src="/LogoSideBar.svg" alt=""/>
+        <img src="/LogoSideBar.svg" alt="Logo del sideBar"/>
     </div>
     </div>
   </MenuList>
 </Menu>
+<Link to="/">
 <div className='Menu__Logo'>
     <img className='imgMenu__Logo' src="./LogoNavBar.svg" alt="logoNavbar" />
 </div>
+</Link>
 </div>
 
   )

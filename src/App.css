@@ -1,9 +1,11 @@
 .Menu{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  align-items: start;
   height: 50px;
-  margin: 5px;
+  margin: 3px;
 }
 
 .MenuListContainer{
@@ -13,7 +15,7 @@
 }
 
 .Menu__bottons{
-
+  width: 220px;
   color: #000;
   font-size: 18px;
   font-family: Poppins;
@@ -27,7 +29,7 @@
   flex-direction:row;
   flex-wrap: wrap;
   padding: 4px;
-  
+  width: 220px;
   justify-content: center;
 }
 .logoContact{
@@ -37,16 +39,13 @@
 
 
 .Menu__Logo{
-
-    height: 50px;
-    margin-left: 25%;
-
+    margin-left: 30px;
+    margin-right: 80px;
 }
 
 .imgMenu__Logo{
 
-  width: 100px ;
-  padding-bottom: 15px;
+  width: 140px ;
 }
 
 
