@@ -42,6 +42,7 @@ const Products = () => {
       </aside>
       <main className='Products__main'>
         <h1 className=' products'>Productos</h1>
+        <div className='produscts__main__contenedor'>
         {products.map((product, index) => (
           <div
             onClick={() => handleClick(index)}
@@ -56,6 +57,7 @@ const Products = () => {
             </div>
           </div>
         ))}
+        </div>
       </main>
     </>
   );

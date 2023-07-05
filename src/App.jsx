@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from './components/Products';
 import ProductDetails from './components/ProductsDetails';
+import Faqss from './components/Faqss';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route exact path='/products' element={<Products/>}/>
         <Route exact path='/products/:id' element={<ProductDetails/>}/>
+        <Route exact path='/faqs' element={<Faqss/>}/>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

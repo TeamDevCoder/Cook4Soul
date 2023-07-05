@@ -118,12 +118,202 @@ body{
   border-bottom: solid 1px black;
 }
 
+
+/*Faqs component*/
+.faqs{
+  padding-top: 50px;
+}
+.faqs__section{
+  margin: auto;
+  margin-top: 16px;
+  padding: 0px 16px;
+  width: 95%;
+  height: 70px;
+  background-color:  #D3D3D3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faqs__section__div__h3{
+  width: 85%;
+  font-size: 16px;
+}
+.faqs__section__section__div{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.faqs__div__p{
+  margin: auto;
+  margin-top: 16px;
+  padding: 16px;
+  width: 95%;
+  font-size: 14px;
+  background-color:  #D3D3D3;
+}
+
+
+.noVisible{
+  height: 0px;
+  overflow: hidden;
+  transition: height 1s;
+}
+.visible{
+  height: 106px;
+  overflow: hidden;
+  transition:height 1s;
+}
+.visible1{
+  height: 235px;
+  overflow: hidden;
+  transition:height 1s;
+}
 /*footer component*/
 
 .footer{
+  margin-top: 50px;
   width: 100%;
+  background-color: #D3D3D3;
 }
 .footer__div{
   width: 50%;
   margin: auto;
+}
+.footer__div__img{
+  margin: auto;
+  margin-top: 16px;
+}
+
+.footer__section__div{
+  display: flex;
+  align-items: center;
+}
+.footer__section__div__p{
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+
+.footer__main{
+  margin-left: 16px;
+}
+.footer__main__div{
+  display: flex;
+  align-items: center;
+}
+.footer__main__div__p{
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  /*products component*/
+  .produscts__main__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blur-image {
+    filter: none;
+    transition: 0.3s;
+  }
+  .products__main__div__button{
+    margin-bottom: -30px;
+    width: 100%;
+    height: 66.8px;
+    animation-name: button-appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards
+  }
+  @keyframes button-appear {
+    from {
+      opacity: 0; 
+      background-color: #000;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      background-color: #000;
+      transform: translateY(0); 
+    }
+  }
+  .products__main__div{
+    width: 350px;
+  }
+  .link-button{
+    position:inherit;
+    width: 100%;
+    text-align: center;
+  }
+  /*faqs component*/
+  .visible1{
+    height: 132px;
+  }
+  .visible{
+    height: 80px;
+  }
+  /*footer component*/
+  .footer{
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .footer__div{
+    margin-left: 24px;
+    height: 100%;
+    width: 180px;
+  }
+  .footer__div__img{
+    padding-top: 28px;
+    width: 100%;
+    height: 198px;
+    flex-shrink: 0;
+  }
+
+
+  .footer__section{
+    height: 100%;
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer__section__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__section__div__p{
+    margin-left: 16px;
+    margin-top: 10px;
+  }
+
+  .footer__main{
+    padding-top: 28px;
+    height: 100%;
+  }
+  .footer__main__div{
+    display: flex;
+  }
+  .footer__main__div__p{
+    margin-left: 16px;
+    font-size: 16px;
+  }
+
+ 
+  
 }
