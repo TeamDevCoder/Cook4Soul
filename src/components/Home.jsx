@@ -1,6 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Avatar } from '@chakra-ui/react'
 
 const Home = () => {
+
+        const consultReview = async()=>{
+            try {
+                const response = await fetch('./resena.json')
+                const data = await response.json();
+                return data
+            } catch (error) {
+                console.log("Error en consultReview",error);
+            }
+
+        }
+        const [review, setReview] = useState([]);
+        console.log(review);
+
+        useEffect(()=>{
+                consultReview().then((rev)=>{setReview(rev)})
+
+        }, [])
+        
+
+
   return (
     <div>
         <div id="carouselExampleIndicators" className="carousel slide">
@@ -35,33 +57,45 @@ const Home = () => {
                 <h4 className='home__h4'>A taste of heaven in every bite</h4>
                 <button className='btn btn-secondary home__bottonProds'>Ver productos</button>
                 <p className='home__text'>Lee las reseñas de nuestros clientes y descubre que les gusta sobre nuestros productos</p>
+                
                 <section className='slider'>
 
                             <div className='slider-track'>
-                                <div className='slide'>
-                                    <img src="https://media.istockphoto.com/id/1180243264/es/foto/alfajores-argentinos-tradicionales.jpg?s=612x612&w=0&k=20&c=twBFtEiO9sf5wH9IkLQyoCZMNHw1pJHBHZ8HwzmZ14k=" alt="" />
-                                </div> 
-                                <div className='slide'>
-                                    <img src="https://media.istockphoto.com/id/1180243264/es/foto/alfajores-argentinos-tradicionales.jpg?s=612x612&w=0&k=20&c=twBFtEiO9sf5wH9IkLQyoCZMNHw1pJHBHZ8HwzmZ14k=" alt="" />
-                                </div> 
-                                <div className='slide'>
-                                    <img src="https://media.istockphoto.com/id/1180243264/es/foto/alfajores-argentinos-tradicionales.jpg?s=612x612&w=0&k=20&c=twBFtEiO9sf5wH9IkLQyoCZMNHw1pJHBHZ8HwzmZ14k=" alt="" />
-                                </div> 
-                                <div className='slide'>
-                                    <img src="https://media.istockphoto.com/id/1180243264/es/foto/alfajores-argentinos-tradicionales.jpg?s=612x612&w=0&k=20&c=twBFtEiO9sf5wH9IkLQyoCZMNHw1pJHBHZ8HwzmZ14k=" alt="" />
-                                </div>   
-                                <div className='slide'>
-                                    <img src="https://media.istockphoto.com/id/1180243264/es/foto/alfajores-argentinos-tradicionales.jpg?s=612x612&w=0&k=20&c=twBFtEiO9sf5wH9IkLQyoCZMNHw1pJHBHZ8HwzmZ14k=" alt="" />
-                                </div> 
-                                <div className='slide'>
-                                    <img src="https://media.istockphoto.com/id/1180243264/es/foto/alfajores-argentinos-tradicionales.jpg?s=612x612&w=0&k=20&c=twBFtEiO9sf5wH9IkLQyoCZMNHw1pJHBHZ8HwzmZ14k=" alt="" />
-                                </div> 
-                                <div className='slide'>
-                                    <img src="https://media.istockphoto.com/id/1180243264/es/foto/alfajores-argentinos-tradicionales.jpg?s=612x612&w=0&k=20&c=twBFtEiO9sf5wH9IkLQyoCZMNHw1pJHBHZ8HwzmZ14k=" alt="" />
-                                </div> 
-                                <div className='slide'>
-                                    <img src="https://media.istockphoto.com/id/1180243264/es/foto/alfajores-argentinos-tradicionales.jpg?s=612x612&w=0&k=20&c=twBFtEiO9sf5wH9IkLQyoCZMNHw1pJHBHZ8HwzmZ14k=" alt="" />
-                                </div>     
+                
+                                    {review.map((rev)=>(
+                                        <div className='HomeSlide'>
+                                            
+                                                <p className='slider__name'>{rev.name}</p>
+                                                <p className='slider__review'>"{rev.review}"</p>
+                                                <div className='slider__Img'>
+                                                <img src="/Estrella.svg" alt="" />
+                                                <img src="/Estrella.svg" alt="" />
+                                                <img src="/Estrella.svg" alt="" />
+                                                <img src="/Estrella.svg" alt="" />
+                                                <img src="/Estrella.svg" alt="" />
+                                                </div>
+                                                <Avatar className='avatar' src='https://bit.ly/broken-link' />
+                                                
+                                        </div>
+                                    ))}
+                                    {review.map((rev)=>(
+                                        <div className='HomeSlide'>
+                                                <p className='slider__name'>{rev.name}</p>
+                                                <p className='slider__review'>"{rev.review}"</p>
+                                                <div className='slider__Img'>
+                                                <img src="/Estrella.svg" alt="" />
+                                                <img src="/Estrella.svg" alt="" />
+                                                <img src="/Estrella.svg" alt="" />
+                                                <img src="/Estrella.svg" alt="" />
+                                                <img src="/Estrella.svg" alt="" />
+                                                </div>
+                                                
+                                                <Avatar className='avatar' src='https://bit.ly/broken-link' />
+
+                                                
+                                        </div>
+                                    ))}
+                                 
                             </div>
                         
                 </section>

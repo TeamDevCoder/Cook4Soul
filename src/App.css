@@ -6,6 +6,41 @@
   margin: 5px;
 }
 
+.MenuListContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.Menu__bottons{
+
+  color: #000;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+
+}
+
+.Menu__bottonContact{
+  display: flex;
+  margin: 10px;
+  flex-direction:row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/* .bottonContact__text{
+    margin-top: 11px;
+    margin-left: 3px;
+} */
+
+.logoContact{
+
+  width: 25px;
+}
+
 .Menu__Logo{
 
     height: 50px;
@@ -17,6 +52,14 @@
 
   width: 100px ;
   padding-bottom: 15px;
+}
+
+
+
+.SideBarLogo{
+
+    margin-left: 35px;
+
 }
 
 /*Home*/
@@ -75,31 +118,72 @@ text-align: center;
 margin: 30px;
 }
 
+/*Slider Home*/
+
 .slider{
-  width: 75vw;
+  width: 85vw;
   height: auto;
   margin: auto;
   overflow: hidden;
 }
 
 .slider .slider-track{
-
   display: flex;
   animation: scroll 40s linear infinite;
   -webkit-animation: scroll 40s linear infinite;
-  width: calc(200px *8);
+  width: calc(900px * 2)
 
 }
 
-.slider .slide {
 
-  width: 200px;
+.HomeSlide{
+  
+  display: grid;
+
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+   "avatar name"
+  "estrellas estrellas"
+  "review review";
+  border:solid 2px #000;
+  margin-right: 10px;
+}
+
+.slider__name{
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: normal;
+  margin-right: 80px;
+  line-height: normal;
+  grid-area: name; 
+}
+
+.slider__review{
+  color: #000;
+text-align: center;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 400;
+line-height: normal; 
+grid-area: review;
+margin-top: 10px;
 
 }
 
-.slider .slide img{
+.avatar{
+  grid-area: avatar;
+  margin-top: 5px;
+  margin-left: 5px;
+}
 
-  width: 100%;
+.slider__Img{
+  display: flex;
+  justify-content: center;
+  grid-area: estrellas;
 
 }
 
@@ -110,7 +194,9 @@ margin: 30px;
 
   }
   100% {
-    -webkit-transform: translateX(calc(-200px *8));
-     transform: translateX(calc(-200px *8));
+    -webkit-transform: translateX(calc(-900px *1));
+     transform: translateX(calc(-900px *1));
   }
 }
+
+
