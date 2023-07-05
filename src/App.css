@@ -144,6 +144,12 @@ margin: 30px;
   margin-right: 10px;
 }
 
+.slider__Reviewid{
+
+      display: none;
+
+}
+
 .slider__name{
   color: #000;
   text-align: center;
