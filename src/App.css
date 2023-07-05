@@ -119,9 +119,98 @@ line-height: normal;
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.home__text{
+
+  color: #000;
+font-size: 15px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+text-align: center;
+margin: 30px;
+}
+
+/*Slider Home*/
+
+.slider{
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slider-track{
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(900px * 2)
+
+}
+
+
+.HomeSlide{
+  
+  display: grid;
+
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+   "avatar name"
+  "estrellas estrellas"
+  "review review";
+  border:solid 2px #000;
+  margin-right: 10px;
+}
+
+.slider__Reviewid{
+
+      display: none;
+
+}
+
+.slider__name{
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family: Inter;
+  font-style: normal;
+  margin-right: 80px;
+  line-height: normal;
+  grid-area: name; 
+}
+
+.slider__review{
+  color: #000;
+text-align: center;
+font-size: 16px;
+font-family: Inter;
+font-style: italic;
+font-weight: 400;
+line-height: normal; 
+grid-area: review;
+margin-top: 10px;
+
+}
+
+.avatar{
+  grid-area: avatar;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.slider__Img{
+  display: flex;
+  justify-content: center;
+  grid-area: estrellas;
+
+}
+
+@keyframes scroll {
+  0%{
+     -webkit-transform: translateX(0);
+     transform: translateX(0);
+
   }
   to {
     transform: rotate(360deg);

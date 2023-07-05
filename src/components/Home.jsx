@@ -63,8 +63,9 @@ const Home = () => {
                             <div className='slider-track'>
                 
                                     {review.map((rev)=>(
-                                        <div className='HomeSlide'>
                                             
+                                        <div className='HomeSlide'>
+                                                <p className='slider__Reviewid'>{rev.id}</p>
                                                 <p className='slider__name'>{rev.name}</p>
                                                 <p className='slider__review'>"{rev.review}"</p>
                                                 <div className='slider__Img'>
@@ -80,6 +81,7 @@ const Home = () => {
                                     ))}
                                     {review.map((rev)=>(
                                         <div className='HomeSlide'>
+                                                <p className='slider__Reviewid'>{rev.id}</p>
                                                 <p className='slider__name'>{rev.name}</p>
                                                 <p className='slider__review'>"{rev.review}"</p>
                                                 <div className='slider__Img'>
