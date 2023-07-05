@@ -31,10 +31,11 @@ const NavBar = () => {
     <button type="button" class="btn btn-light Menu__bottons">Nosotros</button>
     <button type="button" class="btn btn-light Menu__bottons">Contacto</button>
     <button type="button" class="btn btn-light Menu__bottons">FAQ'S</button>
-    <div className='btn btn-secondary Menu__bottonContact'>
+    {/* <div className='btn btn-secondary Menu__bottonContact'>
     <img className='logoContact' src="whatsapp.svg" alt="WhatsApp Logo" />
     <p className='bottonContact__text'>Contáctanos</p>
-    </div>
+    </div> */}
+    <button className='btn btn-secondary Menu__bottonContact'><img className='logoContact' src="whatsapp.svg" alt="WhatsApp Logo"></img>Contactanos</button>
     
     <div className='SideBarLogo'>
         <img src="/LogoSideBar.svg" alt=""/>

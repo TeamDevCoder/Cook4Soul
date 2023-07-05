@@ -20,26 +20,21 @@
   font-weight: 500;
   line-height: normal;
   margin-bottom: 20px;
-
 }
 
 .Menu__bottonContact{
   display: flex;
-  margin: 10px;
   flex-direction:row;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 4px;
+  
+  justify-content: center;
 }
-
-/* .bottonContact__text{
-    margin-top: 11px;
-    margin-left: 3px;
-} */
-
 .logoContact{
-
+  margin-top: 2px;
   width: 25px;
 }
+
 
 .Menu__Logo{
 
@@ -57,7 +52,7 @@
 
 
 .SideBarLogo{
-
+  margin-top: 15px;
     margin-left: 35px;
 
 }
