@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Avatar } from '@chakra-ui/react'
-
+import { Link } from 'react-router-dom'
 const Home = () => {
 
         const consultReview = async()=>{
@@ -55,7 +55,7 @@ const Home = () => {
         <main className='Home'>
                 <h1 className='home__h1'>COOK 4 SOUL</h1>
                 <h4 className='home__h4'>A taste of heaven in every bite</h4>
-                <button className='btn btn-secondary home__bottonProds'>Ver productos</button>
+                <Link to="/Products"><button className='btn btn-secondary home__bottonProds'>Ver productos</button></Link>
                 <p className='home__text'>Lee las reseñas de nuestros clientes y descubre que les gusta sobre nuestros productos</p>
                 
                 <section className='slider'>
