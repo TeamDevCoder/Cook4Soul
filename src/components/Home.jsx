@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Avatar } from '@chakra-ui/react'
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -20,7 +21,6 @@ const Home = () => {
                 consultReview().then((rev)=>{setReview(rev)})
 
         }, [])
-        
 
 
   return (
@@ -33,13 +33,13 @@ const Home = () => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="https://telefe-static.akamaized.net/media/18201812/alfajor.jpg" className="d-block w-100" alt="..."/>
+      <img src="https://telefe-static.akamaized.net/media/18201812/alfajor.jpg" className="d-block w-100 carousel" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="https://i.ytimg.com/vi/Jwqd_Dx46bc/hqdefault.jpg" className="d-block w-100" alt="..."/>
+      <img src="https://i.ytimg.com/vi/Jwqd_Dx46bc/hqdefault.jpg" className="d-block w-100 carousel" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="https://assets.elgourmet.com/wp-content/uploads/2023/03/cover_4i10yr5otx_alfajores-de-maicena-1-juan-manuel-herrera-el-gourmet-1-1024x683.jpg.webp" className="d-block w-100" alt="..."/>
+      <img src="https://assets.elgourmet.com/wp-content/uploads/2023/03/cover_4i10yr5otx_alfajores-de-maicena-1-juan-manuel-herrera-el-gourmet-1-1024x683.jpg.webp" className="d-block w-100 carousel" alt="..."/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -53,9 +53,12 @@ const Home = () => {
 </div>
 
         <main className='Home'>
+                <section className='Home__Section'>
                 <h1 className='home__h1'>COOK 4 SOUL</h1>
+                <img className='logoHome' src="/LogoNavBar.svg" alt="" />
                 <h4 className='home__h4'>A taste of heaven in every bite</h4>
-                <button className='btn btn-secondary home__bottonProds'>Ver productos</button>
+                <button className=' home__bottonProds'><Link to="/Products">Ver productos</Link></button>
+                </section>
                 <p className='home__text'>Lee las reseñas de nuestros clientes y descubre que les gusta sobre nuestros productos</p>
                 
                 <section className='slider'>
@@ -64,37 +67,47 @@ const Home = () => {
                 
                                     {review.map((rev)=>(
                                             
-                                        <div className='HomeSlide'>
+                                        <div className='HomeSlide' key={rev.id}>
                                                 <p className='slider__Reviewid'>{rev.id}</p>
-                                                <p className='slider__name'>{rev.name}</p>
-                                                <p className='slider__review'>"{rev.review}"</p>
-                                                <div className='slider__Img'>
-                                                <img src="/Estrella.svg" alt="" />
-                                                <img src="/Estrella.svg" alt="" />
-                                                <img src="/Estrella.svg" alt="" />
-                                                <img src="/Estrella.svg" alt="" />
-                                                <img src="/Estrella.svg" alt="" />
+                                                <div className='sliderCont1'>
+                                                   <img className='avatar' src="/AvatarReviews.svg" alt="Avatar" />
+                                                    <div className='sliderCont2'>
+                                                        <p className='slider__name'>{rev.name}</p>
+                                                        <div className='slider__Img'>
+                                                            <img className='slider__star' src="/Estrella.svg" alt="" />
+                                                            <img className='slider__star' src="/Estrella.svg" alt="" />
+                                                            <img className='slider__star' src="/Estrella.svg" alt="" />
+                                                            <img className='slider__star' src="/Estrella.svg" alt="" />
+                                                            <img className='slider__star' src="/Estrella.svg" alt="" />
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <Avatar className='avatar' src='https://bit.ly/broken-link' />
                                                 
-                                        </div>
+                                                <p className='slider__review'>"{rev.review}"</p>
+                                                </div>
                                     ))}
                                     {review.map((rev)=>(
                                         <div className='HomeSlide'>
-                                                <p className='slider__name'>{rev.name}</p>
-                                                <p className='slider__review'>"{rev.review}"</p>
-                                                <div className='slider__Img'>
-                                                <img src="/Estrella.svg" alt="" />
-                                                <img src="/Estrella.svg" alt="" />
-                                                <img src="/Estrella.svg" alt="" />
-                                                <img src="/Estrella.svg" alt="" />
-                                                <img src="/Estrella.svg" alt="" />
+                                                <p className='slider__Reviewid'>{rev.id}</p>
+                                                <div className='sliderCont1'>
+                                                    <Avatar className='avatar' src='https://bit.ly/broken-link' />
+                                                    <div className='sliderCont2'>
+                                                        <p className='slider__name'>{rev.name}</p>
+                                                        <div className='slider__Img'>
+                                                            <img src="/Estrella.svg" alt="" />
+                                                            <img src="/Estrella.svg" alt="" />
+                                                            <img src="/Estrella.svg" alt="" />
+                                                            <img src="/Estrella.svg" alt="" />
+                                                            <img src="/Estrella.svg" alt="" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 
-                                                <Avatar className='avatar' src='https://bit.ly/broken-link' />
-
                                                 
+                                                
+                                                <p className='slider__review'>"{rev.review}"</p>
                                         </div>
+                                                
                                     ))}
                                  
                             </div>
