@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Faqss = () => {
     const [faaqs, setFaaqs] = useState([]);
@@ -46,14 +47,19 @@ const Faqss = () => {
           });
         });
     }
-
+    
   return (
     <main className='faqs'>
-    {faaqs.map((f, index) => {
+      <aside className='d-flex ruta'>
+        <Link className='ruta__link' to={`/`}>Inicio</Link>
+        <p className='ms-1'>/ FAQs</p>
+      </aside>
+      <h1 className='preguntasfrec'>Preguntas frecuentes</h1>
+      {faaqs.map((f, index) => {
         return(
             <div key={f.id}>
-                <section className='faqs__section'>
-                    <h3 className='faqs__section__div__h3' onClick={() => handleClick(index)}>{f.question}</h3>
+                <section className='faqs__section' onClick={() => handleClick(index)}>
+                    <h3 className='faqs__section__div__h3' >{f.question}</h3>
                     {f.view ? 
                     <div className='faqs__section__section__div'>
                         <svg className='faqs__section__section__div__svg2' width="16" height="16" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +74,7 @@ const Faqss = () => {
                     }
                 </section>
                 <div className={`${f.id != 1 ? (f.view ? "visible" : "noVisible") : (f.view ? "visible1" : "noVisible")}`}>
-                    <p className='faqs__div__p'>{f.answer}</p>
+                  {f.id == 1 ? <p className='faqs__div__p'><b>{f.answerbold}</b>{f.answer}</p> : (f.id == 4 ? <p className='faqs__div__p'>{f.answer} <u>{f.answercontact}</u> </p> : <p className='faqs__div__p'>{f.answer}</p> )}
                 </div>
             </div>
         )
