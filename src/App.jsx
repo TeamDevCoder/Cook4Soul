@@ -8,7 +8,7 @@ import Faqss from './components/Faqss';
 import Wpp from './components/Wpp';
 import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
-import NavBar from "./components/navBar"
+import NavBar2 from "./components/navBar"
 import Home from "./components/Home"
 
 
@@ -20,11 +20,11 @@ function App() {
       
     <BrowserRouter>
       <header className="header">
-    <NavBar/>
+    <NavBar2/>
       </header>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
-        <Route exact path='/products' element={<Products/>}/>
+        <Route exact path='/productos' element={<Products/>}/>
         <Route exact path="/product-detail/:id" element={<ProductsDetailContainer/>}/>
         <Route exact path='/faqs' element={<Faqss/>}/>
         <Route exact path='/nosotros' element={<Aboutus/>}/>

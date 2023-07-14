@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
         <div className='footer__div d-flex'>
-            <img className=' footer__div__img' src="/Logo.svg" alt="logo de cook4soul"  />
+            <img className=' footer__div__img' src="/Group.svg" alt="logo de cook4soul"  />
         </div>
         <section className='ms-3 footer__section'>
             <h3 className='text-black'>Horarios</h3>          

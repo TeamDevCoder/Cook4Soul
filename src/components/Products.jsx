@@ -100,7 +100,7 @@ const Products = () => {
 
             {windowWidth >= 1024 ?
             <Link className={product.hovered ? "link-hover" : "link-hover-none"} to={`/product-detail/${product.id}`}> <button onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={() => handleMouseLeave(index)} className={product.hovered ? "hover" : "hover-none" }>Ver producto</button> </Link> : 
-            (product.view ? <Link className='link-button' to={`/products/${product.id}`}> <button className= {` ${product.view ? 'products__main__div__button': 'products__main__div__button__false' }`}>Ver producto</button> </Link>: null)}
+            (product.view ? <Link className='link-button' to={`/product-detail/${product.id}`}> <button className= {` ${product.view ? 'products__main__div__button': 'products__main__div__button__false' }`}>Ver producto</button> </Link>: null)}
             <div className={product.hovered ? "products__main__div__img__div-on" : "products__main__div__img__div"}>
               <h3 className='products__main__div__h3'>{product.name}</h3>
               <p className='products__main__div__p'>{product.price}</p>

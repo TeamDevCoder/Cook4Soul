@@ -45,10 +45,10 @@ const navBar2 = () => {
                     <ul className='menu__navList'>
                         {navVisible ? (
                         <>
-                    <li className='menu_buttons'><Link to="/Products">Productos</Link></li>
-                    <li className='menu_buttons'><Link to="/Nosotros">Nosotros</Link></li>
-                    <li className='menu_buttons'><Link to="/Contacto">Contacto</Link></li>
-                    <li className='menu_buttons'><Link to="/Faqs">FAQ'S</Link></li>
+                    <li className='menu_buttons'><Link to="/products">Productos</Link></li>
+                    <li className='menu_buttons'><Link to="/nosotros">Nosotros</Link></li>
+                    <li className='menu_buttons'><Link to="/contacto">Contacto</Link></li>
+                    <li className='menu_buttons'><Link to="/faqs">FAQ'S</Link></li>
                     <li className='btn-li'><Link className='btn-contacto'  to='#'><img className='imgContact' src="/whatsapp.svg" alt="" /><p className='pContact'>Contáctanos</p></Link></li>
                     <li className='menu__logoSideBar'><img src="/LogoSideBar.svg" alt="Logo" /></li>
                     
