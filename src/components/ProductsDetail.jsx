@@ -18,6 +18,7 @@ const ProducsDetail = ({data}) => {
     // Limpiar el evento del listener cuando el componente se desmonte
     return () => {
       window.removeEventListener('resize', handleResize);
+      
     };
   }, []);
 

@@ -9,7 +9,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      <header className="header">
       <NavBar/>
+      </header>
       <Routes>
 
       <Route exact path="/" element={<Home/>}/>
