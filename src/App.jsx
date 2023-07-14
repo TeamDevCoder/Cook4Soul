@@ -19,7 +19,9 @@ function App() {
       
       
     <BrowserRouter>
+      <header className="header">
     <NavBar/>
+      </header>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path='/products' element={<Products/>}/>

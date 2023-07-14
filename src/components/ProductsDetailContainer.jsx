@@ -23,7 +23,6 @@ const ProductsDetailContainer = () => {
         }
 
         const [product, setProduct]= useState([])
-        console.log(product);
 
         useEffect(()=>{ 
             consultProducts().then((prods)=>{setProduct(prods)})
