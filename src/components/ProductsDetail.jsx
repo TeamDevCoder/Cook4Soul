@@ -36,7 +36,7 @@ const ProducsDetail = ({data}) => {
                     </div>
                 
             </div>
-            <p className='prodsDetails__ingredientes'>Ingredientes: {data.ingredientes}</p>
+            <p className='prodsDetails__ingredientes'><u>Ingredientes:</u> {data.ingredientes}</p>
             
 
             <div className='prodsDetails__icons'>
@@ -61,7 +61,7 @@ const ProducsDetail = ({data}) => {
           {data.description}
         </p>
         </section>
-        <button className='prdDetails_btn'> <img src="whatsapp.svg" alt="" />Hace tu pedido</button>
+        <button className='prdDetails_btn'> <img src="/whatsapp.svg" alt="" />Hace tu pedido</button>
     </div>
     </>
   )
