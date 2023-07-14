@@ -30,7 +30,7 @@ const navBar2 = () => {
                     <li className='menu_buttons'><Link to="/Products">Productos</Link></li>
                     <li className='menu_buttons'><Link to="/Nosotros">Nosotros</Link></li>
                     <li className='menu_buttons'><Link to="/Contacto">Contacto</Link></li>
-                    <li className='menu_buttons'><Link to="/Faq's">FAQ'S</Link></li>
+                    <li className='menu_buttons'><Link to="/Faqs">FAQ'S</Link></li>
                     <li className='btn btn-secondary btn-li'><Link className='btn-contacto'  to='#'><img className='imgContact' src="/whatsapp.svg" alt="" /><p className='pContact'>Contactanos</p></Link></li>
                     <li className='menu__logo'><img src="/LogoSideBar.svg" alt="Logo" /></li>
                     
@@ -41,7 +41,7 @@ const navBar2 = () => {
                     <li className='menu_buttons'><Link to="/Nosotros">Nosotros</Link></li>
                     <li className='menu__logo'><a href=""> <img src="/LogoNavBar.svg" alt="Logo" /></a></li>
                     <li className='menu_buttons'><Link to="/Contacto">Contacto</Link></li>
-                    <li className='menu_buttons'><Link to="/Faq's">FAQ'S</Link></li>
+                    <li className='menu_buttons'><Link to="/Faqs">FAQ'S</Link></li>
                     
                     </>)}
                 </ul>

@@ -23,16 +23,10 @@ body{
 
 .wpp{
   visibility: hidden;
+}
 :root{
   overflow-x: hidden;
   max-width: 100vw;
-}
-body{
-
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-
 }
 /*menu first mobile*/
 
@@ -96,53 +90,49 @@ body{
 @media screen and (max-width: 768px){
 
   .menu{
-
     display: flex;
-  width: 100vw;
-  padding: 8px 24px;
-  align-items: center;
-
+    width: 100vw;
+    padding: 8px 24px;
+    align-items: center;
   }
 
-.menu__logo{
-  width: 126px;
-  height: 173px;
-  flex-shrink: 0;
-  margin-top: 10px;
-  margin-right: -20px;
-}
-.menu__burger,
-.menu__cerrar,
-.menu__logoMobile{
-  display: block;
-}
+  .menu__logo{
+    width: 126px;
+    height: 173px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-right: -20px;
+  }
+  .menu__burger,
+  .menu__cerrar,
+  .menu__logoMobile{
+    display: block;
+  }
 
-.menu__logoMobile{
+  .menu__logoMobile{
+    margin: auto;
+  }
 
-  margin: auto;
-}
+  .menu__nav{
+    opacity: 0;
+    visibility: hidden;
+  }
 
-
-.menu__nav{
-  opacity: 0;
-  visibility: hidden;
-}
-
-.menu__nav{
-display: flex;
-width: 221px;
-height: 650px; 
-flex-direction: column;
-align-items: end;
-gap: 1rem;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-background-color: #FFF;
-padding: 2rem;
-z-index: 999;
-}
+  .menu__nav{
+    display: flex;
+    width: 221px;
+    height: 650px; 
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #FFF;
+    padding: 2rem;
+    z-index: 999;
+  }
 
 .menu_buttons, .menu__buttonContact{
   display: flex; 
@@ -396,7 +386,8 @@ margin-bottom: 5px;
 .blur-image {
   filter: blur(5px);
   transition: 0.3s;
-.slider__Img{
+}
+  .slider__Img{
   display: flex;
   padding: 6px 8px;
   align-items: center;
@@ -406,11 +397,11 @@ margin-bottom: 5px;
 .blur-image-none{
   filter: none;
   transition: 0.3s;
+}
 
 .slider__star{
   height: 20px;
   width: 20px;
-
 }
 .products__main__div__button{
   background-color: transparent;
@@ -422,6 +413,7 @@ margin-bottom: 5px;
   animation-name: button-appear;
   animation-duration: 0.5s;
   animation-fill-mode: forwards
+}
 
 .slider__review{
   display: flex;
@@ -435,29 +427,28 @@ font-style: italic;
 font-weight: 400;
 line-height: normal; 
 grid-area: review;
-
 }
 @keyframes button-appear {
   from {
     opacity: 0; 
     transform: translateY(20px);
-
+  }
+}
 
 
 @keyframes scroll {
-  0%{
-     -webkit-transform: translateX(0);
-     transform: translateX(0);
-
-  }
-  to {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
-    transform: translateY(0); 
+  }
   100% {
-    -webkit-transform: translateX(calc(-900px *1));
-     transform: translateX(calc(-900px *1));
+    -webkit-transform: translateX(calc(-900px * 1));
+    transform: translateX(calc(-900px * 1));
+    opacity: 1;
   }
 }
+
 .link-button{
   width: 100%;
   text-align: center;
@@ -650,12 +641,14 @@ grid-area: review;
 }
 
 /*contact component*/
+
 .ruta__map{
   margin: auto;
   width: 90%;
 }
 .map{
   width: 100%;
+  margin-top: 45px;
 }
 .map__main{
   margin: auto;
@@ -705,6 +698,9 @@ grid-area: review;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+}
+.calle{
+  margin-left: 1.5%;
 }
 
 /*footer component*/
@@ -1001,6 +997,9 @@ grid-area: review;
 
 
   /*contact component*/
+  .map{
+    padding-bottom: 145px;
+  }
   .ruta__map{
     margin: auto;
     width: 95%;
@@ -1074,8 +1073,8 @@ grid-area: review;
   .footer__main__div__p{
     margin-left: 16px;
     font-size: 16px;
-
-
+  }
+}
 @media screen and (min-width: 768px){
 
   .carousel{
@@ -1702,7 +1701,6 @@ align-self: stretch;
   }
 
 }
-}
 
 @media screen and (min-width: 1024px){
   .wpp{
@@ -1811,7 +1809,7 @@ align-self: stretch;
     width: 89%;
   }
   .map{
-    padding-bottom: 40px;
+    padding-bottom: 145px;
   }
   .map__main{
     display: flex;
@@ -1869,43 +1867,43 @@ align-self: stretch;
   grid-column: 1;
   width: 100%;
 }
-.presentation__div{
+  .presentation__div{
  grid-column: 2;
  height: 100%;
  width: 90%;
  display: flex;
  justify-content:space-between;
-}
-.presentation__div__h2{
+  }
+  .presentation__div__h2{
   font-family: Open Sans;
   font-size: 32px;
   line-height: 28px;
-}
-.presentation__div__pcursive{
+  }
+  .presentation__div__pcursive{
   margin-top: -5%;
   font-size: 20px;
-}
-.presentation__div__p{
+  }
+  .presentation__div__p{
   margin-top: -5%;
   font-size: 18px;
   line-height: 30px;
-}
-.presentation__div__phashtag{
+  }
+  .presentation__div__phashtag{
   font-size: 18px;
   line-height: 30px;
-}
+  }
 
 
-.presentationReverse{
+  .presentationReverse{
   width: 85%;
   display:grid;
   grid-template-columns: 66% 34% ;
-}
-.presentationReverse__img{
+  }
+  .presentationReverse__img{
   grid-column: 2;
   width: 100%;
-}
-.presentationReverse__div{
+  }
+  .presentationReverse__div{
   padding-left: 0px;
   grid-column: 1;
   grid-row: 1;
@@ -1913,26 +1911,26 @@ align-self: stretch;
   width: 100%;
   display: flex;
   justify-content:space-between;
-}
-.presentationReverse__div__h2{
+  }
+  .presentationReverse__div__h2{
   font-family: Open Sans;
   font-size: 32px;
   line-height: 28px;
-}
-.presentationReverse__div__pcursive{
+  }
+  .presentationReverse__div__pcursive{
   margin-top: -10%;
   font-size: 20px;
   width: 100%;
   text-align: start;
-}
-.presentationReverse__div__p{
+  }
+  .presentationReverse__div__p{
   margin-top: -10%;
   font-size: 18px;
   line-height: 30px;
   font-family: Inter;
-}
-.presentationReverse__div__phashtag{
+  }
+  .presentationReverse__div__phashtag{
   font-size: 18px;
   line-height: 30px;
-}  
+  }
 }

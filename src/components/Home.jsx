@@ -87,7 +87,7 @@ const Home = () => {
                                                 </div>
                                     ))}
                                     {review.map((rev)=>(
-                                        <div className='HomeSlide'>
+                                        <div key={rev.id} className='HomeSlide'>
                                                 <p className='slider__Reviewid'>{rev.id}</p>
                                                 <div className='sliderCont1'>
                                                     <Avatar className='avatar' src='https://bit.ly/broken-link' />

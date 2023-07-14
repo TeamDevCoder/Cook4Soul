@@ -92,14 +92,14 @@ const Products = () => {
             className='products__main__div d-flex flex-column'
             key={product.id}
           >{windowWidth < 768 ?
-          <img className={`products__main__div__img mt-4 ${product.view ? 'blur-image' : 'blur-image-none'}`} src={product.image} alt={product.name} /> : (windowWidth >= 768 && windowWidth < 1024 ?
-            <img className={`products__main__div__img mt-4 ${product.view ? 'blur-image opacity' : 'blur-image-none opacity1'}`} src={product.view? product.image2 : product.image} alt={product.name} /> : (windowWidth >= 1024 ? 
+          <img className={`products__main__div__img mt-4 ${product.view ? 'blur-image' : 'blur-image-none'}`} src={product.image_1} alt={product.name} /> : (windowWidth >= 768 && windowWidth < 1024 ?
+            <img className={`products__main__div__img mt-4 ${product.view ? 'blur-image opacity' : 'blur-image-none opacity1'}`} src={product.view? product.image_2 : product.image_1} alt={product.name} /> : (windowWidth >= 1024 ? 
             <img className={`products__main__div__img mt-4 ${product.hovered ? 'hover-on' : 'hover-off'}`} 
             onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={() => handleMouseLeave(index)} src={product.hovered ? product.image2 : product.image} alt={product.name} /> : <></>))}
+            onMouseLeave={() => handleMouseLeave(index)} src={product.hovered ? product.image_2 : product.image_1} alt={product.name} /> : <></>))}
 
             {windowWidth >= 1024 ?
-            <Link className={product.hovered ? "link-hover" : "link-hover-none"} to={`/products/${product.id}`}> <button onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={() => handleMouseLeave(index)} className={product.hovered ? "hover" : "hover-none" }>Ver producto</button> </Link> : 
+            <Link className={product.hovered ? "link-hover" : "link-hover-none"} to={`/product-detail/${product.id}`}> <button onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={() => handleMouseLeave(index)} className={product.hovered ? "hover" : "hover-none" }>Ver producto</button> </Link> : 
             (product.view ? <Link className='link-button' to={`/products/${product.id}`}> <button className= {` ${product.view ? 'products__main__div__button': 'products__main__div__button__false' }`}>Ver producto</button> </Link>: null)}
             <div className={product.hovered ? "products__main__div__img__div-on" : "products__main__div__img__div"}>
               <h3 className='products__main__div__h3'>{product.name}</h3>

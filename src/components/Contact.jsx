@@ -44,7 +44,7 @@ const Contact = () => {
             </Link>
           </div>
           <div className='map__main__section__div'>
-            <Link className='map__main__section__div__link'>
+            <Link className='map__main__section__div__link'  to={`mailto:itanflorclases@gmail.com`} target='blank'>
               <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Atomo/mail" clip-path="url(#clip0_404_12027)">
                   <g id="Group">
@@ -73,11 +73,11 @@ const Contact = () => {
               </g>
               <defs>
                 <clipPath id="clip0_404_12034">
-                  <rect width="32" height="32" fill="white" transform="translate(0 0.5)"/>
+                  <rect width="30" height="32" fill="white" transform="translate(0 0.5)"/>
                 </clipPath>
               </defs>
             </svg>
-            <p className='map__main__section__div__p'>Calle de Las Huertas n°52 Dpto. 1B - Madrid, España</p>
+            <p className='map__main__section__div__p calle'>Calle de Las Huertas n°52 Dpto. 1B - Madrid, España</p>
           </div>
         </section>
       </main>

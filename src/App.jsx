@@ -3,11 +3,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from './components/Products';
-import ProductDetails from './components/ProductsDetails';
+import ProductsDetailContainer from './components/ProductsDetailContainer';
 import Faqss from './components/Faqss';
 import Wpp from './components/Wpp';
 import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
+import NavBar from "./components/navBar"
+import Home from "./components/Home"
 
 
 function App() {
@@ -21,10 +23,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path='/products' element={<Products/>}/>
-        <Route exact path="/ProductDetail/:id" element={<ProductsDetailContainer/>}/>
+        <Route exact path="/product-detail/:id" element={<ProductsDetailContainer/>}/>
         <Route exact path='/faqs' element={<Faqss/>}/>
-        <Route exact path='/aboutus' element={<Aboutus/>}/>
-        <Route exact path='/contact' element={<Contact/>}/>
+        <Route exact path='/nosotros' element={<Aboutus/>}/>
+        <Route exact path='/contacto' element={<Contact/>}/>
       </Routes>
       <Wpp></Wpp>
       <Footer></Footer>

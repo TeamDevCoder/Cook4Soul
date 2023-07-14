@@ -33,7 +33,6 @@ const GaleryPrdDetails = ({data}) => {
                             {...imgPrinc !==data.image_1 &&
                              imgPrinc !==data.image_2 ? imgPrinc :null }
                                  alt="" />
-                    
                     </button>
                     
 

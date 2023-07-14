@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -31,10 +32,12 @@ const Footer = () => {
         <main className='footer__main'>
             <h3 className='text-black'>Contactános</h3>
             <div className='footer__main__div'>
+                <Link className='footer__main__div' to={`mailto:itanflorclases@gmail.com`} target='blank'>
                 <svg color='#822E99' xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                 </svg>
                 <p className='footer__main__div__p'>consultascook4soul@gmail.com</p>
+                </Link>
             </div>
             <div className='footer__main__div'>
             <svg className='footer__main__div__map' xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -52,6 +55,7 @@ const Footer = () => {
                 </p>
             </div>
             <div className='footer__main__div'>
+                <Link className='footer__main__div' to={`https://www.instagram.com/cook4.soul/`} target='blank'>
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                 <g clip-path="url(#clip0_575_6768)">
                     <path d="M20.2173 26.3431H7.77774C7.36526 26.2549 6.94189 26.2005 6.54159 26.0735C4.10222 25.299 2.53552 23.6725 1.8547 21.2038C1.76604 20.8823 1.71989 20.5489 1.6543 20.2212C1.6543 16.0754 1.6543 11.9298 1.6543 7.78401C1.74296 7.37023 1.81219 6.95127 1.92315 6.54371C2.69574 3.70482 5.39722 1.66964 8.41137 1.66393C12.1315 1.65693 15.8519 1.64967 19.572 1.6743C20.2056 1.67845 20.8548 1.77878 21.4679 1.94264C24.304 2.70045 26.3319 5.40452 26.3384 8.40597C26.3467 12.1333 26.3526 15.861 26.3285 19.5883C26.3244 20.2139 26.244 20.8634 26.0604 21.4592C25.3081 23.9016 23.6683 25.4621 21.2017 26.1424C20.8797 26.2313 20.5457 26.2772 20.2173 26.3431ZM20.755 13.9992C20.7519 10.2713 17.7374 7.25486 14.0064 7.2463C10.2747 7.23775 7.23719 10.2721 7.24004 14.0057C7.24315 17.7336 10.2576 20.7501 13.9886 20.7586C17.7203 20.7672 20.7578 17.7328 20.7547 13.9992H20.755ZM23.2153 6.84393C23.2247 5.71019 22.316 4.79112 21.1817 4.78671C20.0542 4.78256 19.1237 5.70371 19.1216 6.82604C19.1198 7.93801 20.0627 8.88067 21.175 8.87912C22.2877 8.87756 23.206 7.9616 23.2151 6.84393H23.2153Z" fill="#822E99"/>
@@ -65,6 +69,7 @@ const Footer = () => {
                 </defs>
                 </svg>
                 <p className='footer__main__div__p'>cook4.soul</p>
+                </Link>
             </div>
         </main>
     </footer>
