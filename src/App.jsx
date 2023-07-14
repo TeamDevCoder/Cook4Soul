@@ -11,11 +11,17 @@ import Contact from './components/Contact';
 
 
 function App() {
+
   return (
+
+      
+      
     <BrowserRouter>
+    <NavBar/>
       <Routes>
+        <Route exact path="/" element={<Home/>}/>
         <Route exact path='/products' element={<Products/>}/>
-        <Route exact path='/products/:id' element={<ProductDetails/>}/>
+        <Route exact path="/ProductDetail/:id" element={<ProductsDetailContainer/>}/>
         <Route exact path='/faqs' element={<Faqss/>}/>
         <Route exact path='/aboutus' element={<Aboutus/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
