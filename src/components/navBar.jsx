@@ -57,7 +57,7 @@ const navBar2 = () => {
                         <>
                        <li className='menu_buttons'><Link to="/Products">Productos</Link></li>
                     <li className='menu_buttons'><Link to="/Nosotros">Nosotros</Link></li>
-                    <li className='menu__logoNavBar'><a href=""> <img src="/Logo.svg" alt="Logo" /></a></li>
+                    <li className='menu__logoNavBar'><Link to="/"> <img src="/Logo.svg" alt="Logo" /></Link></li>
                     <li className='menu_buttons'><Link to="/Contacto">Contacto</Link></li>
                     <li className='menu_buttons'><Link to="/Faq's">FAQ'S</Link></li>
                     
