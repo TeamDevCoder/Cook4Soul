@@ -103,7 +103,6 @@ const Products = () => {
             (product.view ? <Link className='link-button' to={`/product-detail/${product.id}`}> <button className= {` ${product.view ? 'products__main__div__button': 'products__main__div__button__false' }`}>Ver producto</button> </Link>: null)}
             <div className={product.hovered ? "products__main__div__img__div-on" : "products__main__div__img__div"}>
               <h3 className='products__main__div__h3'>{product.name}</h3>
-              <p className='products__main__div__p'>{product.price}</p>
             </div>
           </div>
         ))}

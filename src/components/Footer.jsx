@@ -51,7 +51,7 @@ const Footer = () => {
                     </clipPath>
                 </defs>
             </svg>
-                <p className='footer__main__div__p'>Calle de Las Huertas n°52 Dpto. 1B - Madrid, España
+                <p className='footer__main__div__p'>Calle de Las Huertas n°52 - Madrid, España
                 </p>
             </div>
             <div className='footer__main__div'>

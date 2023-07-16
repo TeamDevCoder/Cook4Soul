@@ -33,29 +33,33 @@ const navBar2 = () => {
         setNavVisible(false);
       };
 
+      const handleReset = () =>{
+        setNavVisible(false)
+      }
+
 
   return (
     <div className='menu'>
                     <button className='menu__burger' onClick={abrir}><img src="/burger.svg" alt="" /></button>
                     <Link className='menu__logoMobileA' to="/"><img className='menu__logoMobile' src="/Logo.svg" alt="Logo" /></Link>
-                    <nav className={`menu__nav ${navVisible ? 'visible' : ''}${!navVisible ? 'cerrar':''}`}>
+                    <nav className={`menu__nav ${navVisible ? 'visibleNav' : ''}${!navVisible ? 'cerrar':''}`}>
                     <div className='menuCont_Cerrar'>
                         <button className='menu__cerrar'onClick={cerrar}><img src="/flecha.svg" alt="" /></button>
                     </div>
                     <ul className='menu__navList'>
                         {navVisible ? (
                         <>
-                    <li className='menu_buttons'><Link to="/products">Productos</Link></li>
-                    <li className='menu_buttons'><Link to="/nosotros">Nosotros</Link></li>
-                    <li className='menu_buttons'><Link to="/contacto">Contacto</Link></li>
-                    <li className='menu_buttons'><Link to="/faqs">FAQ'S</Link></li>
-                    <li className='btn-li'><Link className='btn-contacto'  to='#'><img className='imgContact' src="/whatsapp.svg" alt="" /><p className='pContact'>Contáctanos</p></Link></li>
+                    <li className='menu_buttons'><Link onClick={handleReset} to="/productos">Productos</Link></li>
+                    <li className='menu_buttons'><Link onClick={handleReset} to="/nosotros">Nosotros</Link></li>
+                    <li className='menu_buttons'><Link onClick={handleReset} to="/contacto">Contacto</Link></li>
+                    <li className='menu_buttons'><Link onClick={handleReset} to="/faqs">FAQ'S</Link></li>
+                    <li className='btn-li'><Link onClick={handleReset} className='btn-contacto'  to='#'><img className='imgContact' src="/whatsapp.svg" alt="" /><p className='pContact'>Contáctanos</p></Link></li>
                     <li className='menu__logoSideBar'><img src="/LogoSideBar.svg" alt="Logo" /></li>
                     
                     </>
                     ): (
                         <>
-                       <li className='menu_buttons'><Link to="/products">Productos</Link></li>
+                       <li className='menu_buttons'><Link to="/productos">Productos</Link></li>
                     <li className='menu_buttons'><Link to="/nosotros">Nosotros</Link></li>
                     <li className='menu__logoNavBar'><Link to="/"> <img src="/Logo.svg" alt="Logo" /></Link></li>
                     <li className='menu_buttons'><Link to="/contacto">Contacto</Link></li>

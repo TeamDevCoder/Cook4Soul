@@ -44,7 +44,7 @@ const Contact = () => {
             </Link>
           </div>
           <div className='map__main__section__div'>
-            <Link className='map__main__section__div__link'  to={`mailto:itanflorclases@gmail.com`} target='blank'>
+            <Link className='map__main__section__div__link'  to={`mailto:consultas@cook4souls.com`} target='blank'>
               <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Atomo/mail" clip-path="url(#clip0_404_12027)">
                   <g id="Group">
@@ -60,7 +60,7 @@ const Contact = () => {
                   </clipPath>
                 </defs>
               </svg>  
-              <p className='map__main__section__div__p'>consultascook4soul@gmail.com</p>   
+              <p className='map__main__section__div__p'>consultas@cook4souls.com</p>   
             </Link> 
           </div>
           <div className='map__main__section__div'>
@@ -77,7 +77,7 @@ const Contact = () => {
                 </clipPath>
               </defs>
             </svg>
-            <p className='map__main__section__div__p calle'>Calle de Las Huertas n°52 Dpto. 1B - Madrid, España</p>
+            <p className='map__main__section__div__p calle'>Calle de Las Huertas n°52 - Madrid, España</p>
           </div>
         </section>
       </main>

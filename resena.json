@@ -1,21 +1,36 @@
 
 [
     {   "id": 1,
-        "name":"Mariana",
-        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "name":"Claudia G.",
+        "review": "Es el mejor vegano que he probado!!"
     },
     {    "id": 2,
-        "name":"Juan",
-        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "name":"Cris A.",
+        "review": "Estaba pero a nivel Dios 😨😍🔥🙈. Me encantaron."
     },
     {    "id": 3,
-        "name":"Roumaldo",
-        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+        "name":"Alejandro S.",
+        "review": "Se pasaron ! Son muy ricos. Los mejores que he probado👌"
     },
     {    "id": 4,
-        "name":"Gertrudis",
-        "review": "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
-
+        "name":"Laura P.",
+        "review": "No alcance a sacarles fotos, había probado alfajores ricos pero nunca ninguno como estos!!! Es maravilloso..."
+    },
+    {    "id": 5,
+        "name":"Marco R.",
+        "review": "Mi jefa nos invitó de sus alfajores y tengo que decirlo: ¡¡Que cosa más buena!! Muy sabroso, y su relleno, uff. De verdad felicitaciones por su producto."
+    },
+    {    "id": 6,
+        "name":"Sol G.",
+        "review": "Exquisitos los de maracuyá 👌 creo que seremos clientes frecuentes jajaj gracias!!"
+    },
+    {    "id": 7,
+        "name":"Natalia M.",
+        "review": "Son una delicia!! Quería más de maracuyá y el de limón son un cielo😍😍😍"
+    },
+    {    "id": 8,
+        "name":"Martu S.",
+        "review": "Son riquísimos y lo mejor es que también son artesanales."
     }
 
 ]
