@@ -33,6 +33,7 @@ function App() {
       <Wpp></Wpp>
       <Footer></Footer>
     </BrowserRouter>
+
   )
 }
 
