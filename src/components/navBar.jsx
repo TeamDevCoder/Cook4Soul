@@ -55,11 +55,11 @@ const navBar2 = () => {
                     </>
                     ): (
                         <>
-                       <li className='menu_buttons'><Link to="/Products">Productos</Link></li>
-                    <li className='menu_buttons'><Link to="/Nosotros">Nosotros</Link></li>
+                       <li className='menu_buttons'><Link to="/products">Productos</Link></li>
+                    <li className='menu_buttons'><Link to="/nosotros">Nosotros</Link></li>
                     <li className='menu__logoNavBar'><Link to="/"> <img src="/Logo.svg" alt="Logo" /></Link></li>
-                    <li className='menu_buttons'><Link to="/Contacto">Contacto</Link></li>
-                    <li className='menu_buttons'><Link to="/Faqs">FAQ'S</Link></li>
+                    <li className='menu_buttons'><Link to="/contacto">Contacto</Link></li>
+                    <li className='menu_buttons'><Link to="/faqs">FAQ'S</Link></li>
                     
                     </>)}
                 </ul>
