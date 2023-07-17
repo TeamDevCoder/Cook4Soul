@@ -43,8 +43,8 @@ const Aboutus = () => {
             </div>
         </div>
         <div className='aboutus__main__card presentationReverse'>
-            <img className={`'aboutus__main__img presentationReverse__img ${windowWidth >= 1024 ? "wow animate__backInRight" : ""} `} src={windowWidth < 768? "/Fotografia (1).jpg" : "/Card (2).jpg"} alt="foto de franco brignolo sonriente, salpicado con harina, levantando los brazos y sosteniendo un bol de metal plateado en su mano derecha" />
-            <div className={`'aboutus__main__div presentationReverse__div ${windowWidth >=1024 ? " wow animate__backInLeft" : ""}`}>
+            <img className={` aboutus__main__img presentationReverse__img ${windowWidth >= 1024 ? "wow animate__backInRight" : ""} `} src={windowWidth < 768? "/Fotografia (1).jpg" : "/Card (2).jpg"} alt="foto de franco brignolo sonriente, salpicado con harina, levantando los brazos y sosteniendo un bol de metal plateado en su mano derecha" />
+            <div className={`aboutus__main__div presentationReverse__div ${windowWidth >=1024 ? " wow animate__backInLeft" : ""}`}>
                 <h2 className='aboutus__main__div__h2 presentationReverse__div__h2'>Javier Pantó</h2>
                 <p className='aboutus__main__div__pcursive presentationReverse__div__pcursive'>El chef encuentra su magia al amar a quienes cocina</p>
                 <p className='aboutus__main__div__p presentationReverse__div__p '>Soy Javi, Italo-Venozolano que mezcla la pasión por la filosofía con el arte de la pastelería. Soy el científico de la cocina, siempre experimentando con sabores y texturas para crear dulces deliciosos y sorprendentes. Mi objetivo es llevarte en un viaje gastronómico lleno de emociones y despertar tus sentidos. ¡Prepárate para deleitarte con mis creaciones únicas y disfrutar de momentos llenos de dulzura y alegría!</p>
