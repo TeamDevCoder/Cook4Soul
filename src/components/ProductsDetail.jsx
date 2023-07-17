@@ -25,10 +25,10 @@ const ProducsDetail = ({data}) => {
 
   return (
     <>
-    <aside className='d-flex ruta__map'>
-        <Link to={`/`}>Inicio</Link>
-        <Link to={`/productos`}> / Products / </Link>
-        <p> {data.name}</p>
+    <aside className='d-flex ms-4 mt-2 ruta guia'>
+        <Link className='ruta__link' to={`/`}>Inicio</Link>
+        <Link className='ms-1' to={`/productos`}> / Products / </Link>
+        <p className='ms-1'> {data.name}</p>
       </aside>
     <div className='prodsDetails'>
         <div className='prodsDetails-cat'>

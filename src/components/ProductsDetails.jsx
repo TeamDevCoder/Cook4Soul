@@ -28,10 +28,10 @@ const ProductDetails = () => {
 
   return (
     <>
-      <aside className='d-flex ms-4 mt-2'>
-        <Link to={`/`}>Inicio</Link>
-        <Link className='ms-1' to={`/products`}>/ products</Link>
-        <p className='ms-1'>/ {product.name}</p>
+      <aside className='d-flex ms-4 mt-2 ruta'>
+        <Link className='ruta__link' to={`/`}>Inicio</Link>
+        <Link className='ms-1' to={`/products`}> / products</Link>
+        <p className='ms-1'> / {product.name}</p>
       </aside>
       <main className='prodcuts__main'>
         <section className='prodcuts__main__section'>

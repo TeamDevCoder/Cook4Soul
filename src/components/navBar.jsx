@@ -5,21 +5,18 @@ import { Link } from 'react-router-dom';
 
 const navBar2 = () => {
 
-  const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
-      setScreenSize({ width: window.innerWidth, height: window.innerHeight });
+      setWindowWidth(window.innerWidth);
     };
+
     window.addEventListener('resize', handleResize);
 
-    // Ejecutar el handleResize una vez para obtener el tamaño inicial de la pantalla
-    handleResize();
-
-    // Limpiar el evento del listener cuando el componente se desmonte
+    // Limpia el evento del listener al desmontar el componente
     return () => {
       window.removeEventListener('resize', handleResize);
-      
     };
   }, []);
 
@@ -47,7 +44,7 @@ const navBar2 = () => {
                         <button className='menu__cerrar'onClick={cerrar}><img src="/flecha.svg" alt="" /></button>
                     </div>
                     <ul className='menu__navList'>
-                        {navVisible ? (
+                        {windowWidth < 768 ? (
                         <>
                     <li className='menu_buttons'><Link onClick={handleReset} to="/productos">Productos</Link></li>
                     <li className='menu_buttons'><Link onClick={handleReset} to="/nosotros">Nosotros</Link></li>

@@ -33,9 +33,9 @@ const ProductsDetailContainer = () => {
   return (
     <>
     {product.map((prod)=>(
-
+            <div key={prod.id}>
         <ProducsDetail data={prod}/>
-
+            </div>
     ))}
    
     </>

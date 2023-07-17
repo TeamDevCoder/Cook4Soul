@@ -4,9 +4,9 @@ import React, { useEffect, useState } from 'react'
 const GaleryPrdDetails = ({data}) => {
 
         const [imgPrinc, setimgPrinc] = useState(data.image_1);
-        const [imgSecond, setimgSecond] = useState("");
-        const [imgTerc, setimgTerc] = useState("");
-        const [imgCuart, setimgCuart] = useState("");
+        // const [imgSecond, setimgSecond] = useState("");
+        // const [imgTerc, setimgTerc] = useState("");
+        // const [imgCuart, setimgCuart] = useState("");
         const [transition, setTransition] = useState("")
 
                     const changingPrincipalImg = async(e)=>{
