@@ -3,27 +3,35 @@ import React from 'react';
 import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from './components/Products';
-import ProductDetails from './components/ProductsDetails';
-import NavBar from "./components/navBar";
-import './app.css'
-import Home from "./components/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProductsDetailContainer from './components/ProductsDetailContainer';
+import Faqss from './components/Faqss';
+import Wpp from './components/Wpp';
+import Aboutus from './components/Aboutus';
+import Contact from './components/Contact';
+import NavBar2 from "./components/navBar"
+import Home from "./components/Home"
+
 
 function App() {
-  
 
   return (
+
     <BrowserRouter>
-      <NavBar/>
+      <header className="header">
+    <NavBar2/>
+      </header>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
-        <Route exact path='/products' element={<Products/>}/>
-        <Route exact path='/products/:id' element={<ProductDetails/>}/>
+        <Route exact path='/productos' element={<Products/>}/>
+        <Route exact path="/product-detail/:id" element={<ProductsDetailContainer/>}/>
+        <Route exact path='/faqs' element={<Faqss/>}/>
+        <Route exact path='/nosotros' element={<Aboutus/>}/>
+        <Route exact path='/contacto' element={<Contact/>}/>
       </Routes>
+      <Wpp></Wpp>
       <Footer></Footer>
     </BrowserRouter>
 
-      
   )
 }
 

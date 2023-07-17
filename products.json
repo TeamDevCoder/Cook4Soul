@@ -1,4 +1,50 @@
-[{"id":1,"image":"https://www.gourmet.cl/wp-content/uploads/2016/09/Alfajores-Ajustada-Web-570x458.jpg", "name":"Manjar Majesty","ingredientes": "harina de trigo, maicena, mantequilla vegana, panela, dulce de leche vegano, cacao orgánico, azúcar, crema vegana y leche de coco", "description":"Descubre el sabor original y regio de nuestro Manjar Majesty. Dos galletas finas que abrazan un majestuoso relleno de “dulce de leche” vegano, todo cubierto con una exquisita capa de chocolate. Sumérgete en la suavidad y dulzura irresistible de este clásico sabor. ¡No podrás resistirte a probarlo! Usa nuestro hashtag #ManjarMajesty", "price":"EU$2,5"},
-{"id":2,"image":"https://www.gourmet.cl/wp-content/uploads/2016/09/Alfajores-Ajustada-Web-570x458.jpg", "name":"Passion Fruit Queen", "ingredientes": "harina de trigo, maicena, mantequilla vegana, panela, pulpa de maracuyá, crema vegetal y avena", "dedscriptio": "Déjate seducir por el sabor más apasionante con nuestro Passion Fruit Queen. Dos galletas delicadas envuelven un relleno exquisito de maracuyá, todo cubierto con una irresistible capa de chocolate. Deleita tu paladar con la combinación única de dulzura y acidez que te transportará a tierras tropicales.Usa nuestro hashtag #PassionFruitQueen", "price":"EU$2,5"},
-{"id":3,"image":"https://www.gourmet.cl/wp-content/uploads/2016/09/Alfajores-Ajustada-Web-570x458.jpg", "name":"Lemon Jester","ingredientes": "harina de trigo, maicena, mantequilla vegana, panela, limón, crema vegetal y avena.", "description": "Sumérgete en la diversión con nuestro Lemon Jester. Dos suaves galletas se unen para abrazar un relleno refrescante de limón, todo cubierto de una capa irresistible de chocolate. Descubre el equilibrio perfecto entre lo dulce y lo cítrico en cada bocado. ¡Prepárate para una explosión de sabor y energía ! Usa nuestro hashtag #LemonJester", "price":"EU$2,5"},
-{"id":4,"image":"https://www.gourmet.cl/wp-content/uploads/2016/09/Alfajores-Ajustada-Web-570x458.jpg", "name":"Peanut Charioteer","ingredientes": "harina de trigo, maicena, mantequilla vegana, panela, maní y crema vegetal","description": "¡Descubre el sabor más crocante con nuestro Peanut Charioteer! Dos galletas crujientes envuelven un relleno intenso de maní, cubierto con una deliciosa capa de chocolate. Este alfajor te brindará la experiencia perfecta para satisfacer tu antojo y deleitar tus sentidos.Usa nuestro hashtag #PeanutCharioteer", "price":"EU$2,5"}]
+[
+  {
+    "id": 1,
+    "image_1": "/img/ManjarMajesty/img1.png",
+    "image_2": "/img/ManjarMajesty/img2.png",
+    "image_3": "/img/ManjarMajesty/img3.png",
+    "image_4": "/img/ManjarMajesty/img4.png",
+    "name": "Manjar Majesty",
+    "category":"alfajores",
+    "ingredientes": "harina de trigo, maicena, mantequilla vegana, panela, dulce de leche vegano, cacao orgánico, azúcar, crema vegana y leche de coco",
+    "description": "Descubre el sabor original y regio de nuestro Manjar Majesty. Dos galletas finas que abrazan un majestuoso relleno de “dulce de leche” vegano, todo cubierto con una exquisita capa de chocolate. Sumérgete en la suavidad y dulzura irresistible de este clásico sabor. ¡No podrás resistirte a probarlo! Usa nuestro hashtag #ManjarMajesty",
+    "price": "EU$2,5"
+  },
+  {
+    "id": 2,
+    "image_1": "/img/Passion/img1.png",
+    "image_2": "/img/Passion/img2.png",
+    "image_3": "/img/Passion/img3.png",
+    "image_4": "/img/Passion/img4.png",
+    "name": "Passion Fruit Queen",
+    "category":"alfajores",
+    "ingredientes": "harina de trigo, maicena, mantequilla vegana, panela, pulpa de maracuyá, crema vegetal y avena",
+    "description": "Déjate seducir por el sabor más apasionante con nuestro Passion Fruit Queen. Dos galletas delicadas envuelven un relleno exquisito de maracuyá, todo cubierto con una irresistible capa de chocolate. Deleita tu paladar con la combinación única de dulzura y acidez que te transportará a tierras tropicales.Usa nuestro hashtag #PassionFruitQueen",
+    "price": "EU$2,5"
+  },
+  {
+    "id": 3,
+    "image_1": "/img/Lemon/img1.png",
+    "image_2": "/img/Lemon/img2.png",
+    "image_3": "/img/Lemon/img3.png",
+    "image_4": "/img/Lemon/img4.png",
+    "name": "Lemon Jester",
+    "category":"alfajores",
+    "ingredientes": "harina de trigo, maicena, mantequilla vegana, panela, limón, crema vegetal y avena.",
+    "description": "Sumérgete en la diversión con nuestro Lemon Jester. Dos suaves galletas se unen para abrazar un relleno refrescante de limón, todo cubierto de una capa irresistible de chocolate. Descubre el equilibrio perfecto entre lo dulce y lo cítrico en cada bocado. ¡Prepárate para una explosión de sabor y energía ! Usa nuestro hashtag #LemonJester",
+    "price": "EU$2,5"
+  },
+  {
+    "id": 4,
+    "image_1": "/img/Peanut/img1.png",
+    "image_2": "/img/Peanut/img2.png",
+    "image_3": "/img/Peanut/img3.png",
+    "image_4": "/img/Peanut/img4.png",
+    "name": "Peanut Charioteer",
+    "category":"alfajores",
+    "ingredientes": "harina de trigo, maicena, mantequilla vegana, panela, maní y crema vegetal",
+    "description": "¡Descubre el sabor más crocante con nuestro Peanut Charioteer! Dos galletas crujientes envuelven un relleno intenso de maní, cubierto con una deliciosa capa de chocolate. Este alfajor te brindará la experiencia perfecta para satisfacer tu antojo y deleitar tus sentidos.Usa nuestro hashtag #PeanutCharioteer",
+    "price": "EU$2,5"
+  }
+]
