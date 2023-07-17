@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const Wpp = () => {
+    
   return (
     <Link className='wpp' to={`https://api.whatsapp.com/send?phone=34667873835&text=Hola.`} target='blank'>
         <svg className='wpp1' width="46" height="46" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
