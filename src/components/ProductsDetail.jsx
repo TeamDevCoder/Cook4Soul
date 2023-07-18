@@ -27,7 +27,7 @@ const ProducsDetail = ({data}) => {
     <>
     <aside className='d-flex ms-4 mt-2 ruta guia'>
         <Link className='ruta__link' to={`/`}>Inicio</Link>
-        <Link className='ms-1' to={`/productos`}> / Products / </Link>
+        <Link className='ms-1' to={`/productos`}> / Productos / </Link>
         <p className='ms-1'> {data.name}</p>
       </aside>
     <div className='prodsDetails'>
@@ -61,7 +61,7 @@ const ProducsDetail = ({data}) => {
           {data.description}
         </p>
         </section>
-        <Link className='prdDetails_btn' to={`https://api.whatsapp.com/send?phone=34667873835&text=Hola.`} target='blank'>
+        <Link className='prdDetails_btn' to={`https://api.whatsapp.com/send?phone=34667873835&text=Hola,%20me%20gustaría%20adquirir%20${data.name}`} target='blank'>
           <button className='d-flex'>
 <svg className='wpp_btn' width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Atomo" clip-path="url(#clip0_338_10820)">

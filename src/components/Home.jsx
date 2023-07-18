@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Link } from "react-router-dom";
-
+import {Helmet} from 'react-helmet'
 const Home = () => {
         const consultReview = async()=>{
             try {
@@ -22,6 +22,12 @@ const Home = () => {
 
   return (
     <div>
+        <Helmet>
+        <title> Home - Cook4Soul</title>
+      <meta name='keywords' content='alfajores veganos, alfajores veganos en España, España, alfajores argentinos, alfajores sanos en Madrid, alfajores, saludable, veggie, Madrid, alfajores sin TACC, SIN TACC'/>
+      <meta name='description' content='pastelería vegana, Elaboramos productos 100% 
+      artesanales y naturales, libres de lactosa y azúcares añadidos. utilizamos ingredientes veganos y orgánicos de gran calidad' />
+        </Helmet>
         <div id="carouselExampleAutoplaying" className="carousel slide carousel_Slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -30,13 +36,13 @@ const Home = () => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="8000">
-      <img src="/Carrousel.png" className="d-block w-100 carousel carousel-img" alt="..."/>
+      <img src="/Carrousel.png" className="d-block w-100 carousel carousel-img zoom" alt="..."/>
     </div>
-    <div className="carousel-item" data-bs-interval="8000">
-      <img  src="/Carrousel2.png" className="d-block w-100 carousel carousel-img" alt="..."/>
+    <div className="carousel-item " data-bs-interval="8000">
+      <img src="/Carrousel2.png" className="d-block w-100 carousel carousel-img zoom" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img  src="/Carrousel3.png" className="d-block w-100 carousel carousel-img" alt="..."/>
+      <img  src="/Carrousel3.png" className="d-block w-100 carousel carousel-img zoom" alt="..."/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -50,6 +56,7 @@ const Home = () => {
 </div>
 
         <main className='Home'>
+
                 <section className='Home__Section'>
                 <h1 className='home__h1'><img src="/Logo.svg" alt="" /></h1>
                 <h4 className='home__h4'>A taste of heaven in every bite</h4>
@@ -66,7 +73,8 @@ const Home = () => {
                                         <div className='HomeSlide' key={rev.id}>
                                                 <p className='slider__Reviewid'>{rev.id}</p>
                                                 <div className='sliderCont1'>
-                                                   <img className='avatar' src="/AvatarReviews.svg" alt="Avatar" />
+                                                <div className='avatarContainer'>
+                                                  <img className='avatar' src="/AvatarReviews.svg" /></div>
                                                     <div className='sliderCont2'>
                                                         <p className='slider__name'>{rev.name}</p>
                                                         <div className='slider__Img'>
@@ -86,7 +94,7 @@ const Home = () => {
                                         <div key={rev.id} className='HomeSlide'>
                                                 <p className='slider__Reviewid'>{rev.id}</p>
                                                 <div className='sliderCont1'>
-                                                    <img className='avatar' src="/AvatarReviews.svg" />
+                                                      <div className='avatarContainer'><img className='avatar' src="/AvatarReviews.svg" /></div>
                                                     <div className='sliderCont2'>
                                                         <p className='slider__name'>{rev.name}</p>
                                                         <div className='slider__Img'>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Faqss = () => {
     const [faaqs, setFaaqs] = useState([]);
@@ -50,6 +51,12 @@ const Faqss = () => {
     
   return (
     <main className='faqs'>
+      <Helmet>
+        <title> Preguntas Frecuentes - Cook4Soul</title>
+      <meta name='keywords' content='alfajores veganos, alfajores veganos en España, España, alfajores argentinos, alfajores sanos en Madrid, alfajores, saludable, veggie, Madrid, alfajores sin TACC, SIN TACC'/>
+      <meta name='description' content='pastelería vegana, Elaboramos productos 100% 
+      artesanales y naturales, libres de lactosa y azúcares añadidos. utilizamos ingredientes veganos y orgánicos de gran calidad' />
+        </Helmet>
       <aside className='d-flex ruta'>
         <Link className='ruta__link' to={`/`}>Inicio</Link>
         <p className='ms-1'>/ FAQs</p>
