@@ -1023,6 +1023,11 @@ flex-shrink: 0;
   margin-top: 10px;
 }
 
+.calle{
+
+  margin-left: 10px;
+}
+
 
  .extra3{
 
@@ -1448,12 +1453,12 @@ flex-shrink: 0;
   }
   /*wpp*/
   .wpp{
+    height: 90px;
     margin-left: 83%;
     visibility: visible;
     position: sticky;
     bottom: 50px;
     width: 90px;
-    height: 90px;
     border-radius: 50%;
     background-color: #075e54;
     transform: translateY(-100%);

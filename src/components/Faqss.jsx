@@ -81,7 +81,7 @@ const Faqss = () => {
                     }
                 </section>
                 <div className={`${f.id != 1 ? (f.view ? "visible" : "noVisible") : (f.view ? "visible1" : "noVisible")}`}>
-                  {f.id == 1 ? <p className='faqs__div__p'><b>{f.answerbold}</b>{f.answer}</p> : (f.id == 4 ? <p className='faqs__div__p'>{f.answer} <u>{f.answercontact}</u> </p> : <p className='faqs__div__p'>{f.answer}</p> )}
+                  {f.id == 1 ? <p className='faqs__div__p'><b>{f.answerbold}</b>{f.answer}</p> : (f.id == 4 ? <p className='faqs__div__p'>{f.answer} <Link to={'/contacto'}><u>{f.answercontact}</u></Link> </p> : <p className='faqs__div__p'>{f.answer}</p> )}
                 </div>
             </div>
         )

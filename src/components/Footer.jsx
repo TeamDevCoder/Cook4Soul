@@ -39,6 +39,7 @@ const Footer = () => {
                 <p className='footer__main__div__p'>consultas@cook4souls.com</p>
                 </Link>
             </div>
+            <Link to={'/contacto'}>
             <div className='footer__main__div'>
             <svg className='footer__main__div__map' xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <g clip-path="url(#clip0_575_6760)">
@@ -54,6 +55,7 @@ const Footer = () => {
                 <p className='footer__main__div__p extra'>Calle de Las Huertas n°52 - Madrid, España
                 </p>
             </div>
+            </Link>
             <div className='footer__main__div'>
                 <Link className='footer__main__div' to={`https://www.instagram.com/cook4.soul/`} target='blank'>
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
