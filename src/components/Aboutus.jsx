@@ -53,7 +53,7 @@ const Aboutus = () => {
             <div className={`aboutus__main__div presentationReverse__div ${windowWidth >=1024 ? " wow animate__backInLeft" : ""}`}>
                 <h2 className='aboutus__main__div__h2 presentationReverse__div__h2'>Javier Pantó</h2>
                 <p className='aboutus__main__div__pcursive presentationReverse__div__pcursive'>El chef encuentra su magia al amar a quienes cocina</p>
-                <p className='aboutus__main__div__p presentationReverse__div__p '>Soy Javi, Italo-Venozolano que mezcla la pasión por la filosofía con el arte de la pastelería. Soy el científico de la cocina, siempre experimentando con sabores y texturas para crear dulces deliciosos y sorprendentes. Mi objetivo es llevarte en un viaje gastronómico lleno de emociones y despertar tus sentidos. ¡Prepárate para deleitarte con mis creaciones únicas y disfrutar de momentos llenos de dulzura y alegría!</p>
+                <p className='aboutus__main__div__p presentationReverse__div__p '>Soy Javi, Italo-Venezolano que mezcla la pasión por la filosofía con el arte de la pastelería. Soy el científico de la cocina, siempre experimentando con sabores y texturas para crear dulces deliciosos y sorprendentes. Mi objetivo es llevarte en un viaje gastronómico lleno de emociones y despertar tus sentidos. ¡Prepárate para deleitarte con mis creaciones únicas y disfrutar de momentos llenos de dulzura y alegría!</p>
                 <p className='aboutus__main__div__phashtag presentationReverse__div__phashtag'>#VeganPastry #healthybaking #cheffscience #naturelover </p>
             </div>
         </div>
