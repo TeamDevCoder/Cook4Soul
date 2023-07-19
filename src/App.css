@@ -1019,15 +1019,15 @@ flex-shrink: 0;
   align-items: center;
 }
 .footer__section__div__p{
-  margin-left: 16px;
+  margin-left: 22px;
   margin-top: 10px;
 }
 
-.extra{
 
-  padding-left: 6px;
-}
+ .extra3{
 
+  margin-left: 21px !important;
+}  
 
 .footer__main{
   margin-left: 16px;
