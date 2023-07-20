@@ -28,20 +28,20 @@ const Home = () => {
       <meta name='description' content='pastelería vegana, Elaboramos productos 100% 
       artesanales y naturales, libres de lactosa y azúcares añadidos. utilizamos ingredientes veganos y orgánicos de gran calidad' />
         </Helmet>
-        <div id="carouselExampleAutoplaying" className="carousel slide carousel_Slide" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" className="carousel slide carousel_Slide" data-bs-ride="true">
   <div className="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="8000">
+    <div className="carousel-item active " data-bs-interval="3000">
       <img src="/Carrousel.png" className="d-block w-100 carousel carousel-img zoom" alt="..."/>
     </div>
-    <div className="carousel-item " data-bs-interval="8000">
+    <div className="carousel-item " data-bs-interval="3000">
       <img src="/Carrousel2.png" className="d-block w-100 carousel carousel-img zoom" alt="..."/>
     </div>
-    <div className="carousel-item">
+    <div className="carousel-item" data-bs-interval="3000" >
       <img  src="/Carrousel3.png" className="d-block w-100 carousel carousel-img zoom" alt="..."/>
     </div>
   </div>

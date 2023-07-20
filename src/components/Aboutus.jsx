@@ -44,7 +44,8 @@ const Aboutus = () => {
             <div className={`aboutus__main__div presentation__div ${windowWidth >= 1024 ? "wow animate__backInRight" : ""} `}>
                 <h2 className='aboutus__main__div__h2 presentation__div__h2'>Franco Brignolio</h2>
                 <p className='aboutus__main__div__pcursive presentation__div__pcursive'>Generando un puente cultural deliciosamente innovador, entre bits y dulzuras!</p>
-                <p className='aboutus__main__div__p presentation__div__p'>Soy Franco, un argentino lleno de energía y entusiasmo. Soy ingeniero en telecomunicaciones de profesión, pero mi verdadera pasión está en la cocina.  ¡Sí, soy un cocinero apasionado listo para conquistar sus paladares! El más hablador del grupo, y puedo hablar sin parar todo el día. Me encanta emprender en la cocina. ¡Ven y únete a mi aventura culinaria, donde la diversión y la buena comida están garantizadas!</p>
+                <p className='aboutus__main__div__p presentation__div__p'>Soy Franco, nacido y criado en Argentina, un Ingeniero en Telecomunicaciones con una pasión desbordante por emprender en la cocina. Siempre me encontrarás hablando y hablando, compartiendo mi amor por la gastronomía con todos, lleno de energía y entusiasmo. Estoy aquí para fusionar la magia de la tecnología con el mundo de la cocina. ¡Ven y únete a nuestro espacio para disfrutar de una experiencia culinaria única llena de creatividad, sabor y anécdotas garantizadas!
+</p>
                 <p className='aboutus__main__div__phashtag presentation__div__phashtag'>#VeganPastry #healthybaking #FuncyNerd #Argentina</p>
             </div>
         </div>
